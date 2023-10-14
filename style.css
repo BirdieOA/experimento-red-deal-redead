@@ -1,0 +1,40 @@
+:root {
+  --background-dark: #181d22;
+  --background-light: #c8dbed;
+  --color-dark: #c8dbed;
+  --color-light: #181d22;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-dark);
+  color: var(--color-dark);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.children {
+  height: 100px;
+  width: auto;
+  margin: 10px;
+  background: var(--background-light);
+  color: var(--background-dark);
+}
+
+@media screen and (max-width: 630px) {
+  .contenedor {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }}
